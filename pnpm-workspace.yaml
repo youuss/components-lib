@@ -1,3 +1,4 @@
 packages:
   - vue2-lib/**
   - vue3-lib/**
+  - plugins/**
