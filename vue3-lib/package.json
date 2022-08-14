@@ -1,0 +1,16 @@
+{
+  "name": "vue3-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "element-plus": "^2.2.13",
+    "vue": "^3.2.37"
+  }
+}
