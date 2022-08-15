@@ -1,0 +1,23 @@
+@import '../../node_modules/prismjs/themes/prism-tomorrow.css';
+@import '../../node_modules/prismjs/plugins/toolbar/prism-toolbar.css';
+
+body {
+  --bg-color-container: #fff;
+  --text-secondary: rgba(0, 0, 0, 0.6);
+  --aside-box-shadow: rgb(231, 231, 231) -1px 0px 0px 0px inset;
+  --text-placeholder: rgba(0, 0, 0, 0.4);
+  --border-radius: 3px;
+  --aside-width: 260px;
+  --anim-time-fn-easing: cubic-bezier(.38, 0, .24, 1);
+  --anim-time-fn-ease-out: cubic-bezier(0, 0, .15, 1);
+  --anim-time-fn-ease-in: cubic-bezier(.82, 0, 1, .9);
+  --anim-duration-base: .2s;
+  --anim-duration-moderate: .24s;
+  --anim-duration-slow: .28s;
+  --bg-color-code: #f3f3f3;
+  --bg-color-card: #fff;
+  --bg-color-demo: #fff;
+  --component-border: #e7e7e7;
+  --bg-color-demo-hover: rgba(0, 0, 0, .05);
+  --text-anti: #fff;
+}

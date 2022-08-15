@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "play:vue2": "cd vue2-lib/playground && npm run dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "prismjs": "^1.28.0",
+    "sass": "^1.54.4",
     "vite": "^3.0.7"
   }
 }

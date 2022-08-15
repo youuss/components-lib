@@ -1,3 +1,0 @@
-[submodule "vue2-lib/element"]
-	path = vue2-lib/element
-	url = git@github.com:ElemeFE/element.git

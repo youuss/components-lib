@@ -2,7 +2,7 @@
   "name": "vue2-lib",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "element-ui": "^2.15.9",
-    "vue": "2"
+    "vue": "2.7.8",
+    "vue-template-compiler": "2.7.8"
   }
 }
