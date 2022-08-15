@@ -1,7 +1,0 @@
-
-[submodule "vue2-lib/element"]
-	path = vue2-lib/element
-	url = https://github.com/ElemeFE/element.git
-[submodule "vue3-lib/element-plus"]
-	path = vue3-lib/element-plus
-	url = https://github.com/element-plus/element-plus.git
