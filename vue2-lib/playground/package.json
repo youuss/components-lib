@@ -10,7 +10,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue2": "^1.1.2",
-    "@youus/vite-plugin-doc": "^1.0.0",
     "vue-router": "3.5.3"
   }
 }
