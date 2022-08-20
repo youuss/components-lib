@@ -2,13 +2,16 @@ import Vue from 'vue';
 import App from './App.vue';
 import VueRouter from 'vue-router';
 import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import CMLib from '../../lib'
 import DemoBox from './components/DemoBox.vue'
 import routes from '../router/demoRoutes'
 import '../style.scss'
+import '../../style.scss'
+import '../../design-token.scss'
 
-Vue.use(ElementUI)
+Vue.use(ElementUI, { size: 'small' })
 Vue.use(VueRouter);
+Vue.use(CMLib)
 Vue.component('DemoBox', DemoBox)
 
 const router = new VueRouter({

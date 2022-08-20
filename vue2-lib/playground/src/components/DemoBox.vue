@@ -94,6 +94,7 @@ const preStyle = computed(() => {
     border-radius: 6px;
     .demo-box_content {
         padding: 40px;
+        // background-color: #f2f4f9;
     }
     .demo-box_code {
         margin: 0;

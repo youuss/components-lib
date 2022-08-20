@@ -98,19 +98,9 @@ export default ({ mode }) =>
                 <template>
                   <div name="DEMO">${result.html}</div>
                 </template>
-                <script>
+                <script setup>
                 ${demoDefsStr}
                 ${demoCodesStr}
-                export default {
-                  components: {
-                    ${Object.keys(demoImports).join(',')}
-                  },
-                  setup() {
-                    return {
-                      ${Object.keys(demoCodeImports).join(',')}
-                    }
-                  }
-                }
                 </script>
               `;
 

@@ -1,0 +1,28 @@
+/*
+Write your variables here. All available variables can be
+found in element-ui/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+*/
+$--color-primary: #29CCCC;
+$--color-success: #8BE62E;
+$--color-warning: #FFCD33;
+$--color-danger: #FF6666;
+$--color-info: #8D8F99;
+$--color-text-primary: #2F3033;
+$--color-text-regular: #5E5F66;
+$--color-text-secondary: #8D8F99;
+$--color-text-placeholder: #BCBECC;
+$--button-small-border-radius: 16px;
+$--button-small-font-size: 14px;
+$--pagination-background-color: #F9FAFB;
+
+/* icon font path, required */
+$--font-path: './node_modules/element-ui/lib/theme-chalk/fonts';
+
+@import "./node_modules/element-ui/packages/theme-chalk/src/index";
+
+.btn-prev,
+.btn-next,
+.el-pager li {
+  border-radius: 100% !important;
+}

@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "play:vue2": "cd vue2-lib/playground && npm run dev",
+    "play:vue2": "cd vue2-lib/playground && npm run routes && npm run dev",
     "play:vue3": "cd vue3-lib/playground && npm run dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "fs-extra": "^10.1.0",
+    "globby": "^13.1.2",
     "gray-matter": "^4.0.3",
     "prismjs": "^1.28.0",
     "sass": "^1.54.4",
