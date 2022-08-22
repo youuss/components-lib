@@ -27,30 +27,25 @@
     </div>
   </div>
 </template>
-<script>
-import { ref } from 'vue'
+<script setup>
+import { ref, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 import demoRoutes from '../router/demoRoutes';
 
-export default {
-  setup() {
-    const currentPath = ref('')
-    return {
-      demoRoutes,
-      currentPath
-    }
-  },
-  mounted() {
-    this.currentPath = window.location.pathname
-  },
-  methods: {
-    routeChange(path) {
-      if (this.currentPath === path) {
-        return
-      }
-      this.$router.push(path)
-      this.currentPath = path
-    }
+const currentPath = ref('')
+
+const router = useRouter()
+
+onMounted(() => {
+  currentPath.value = window.location.pathname
+})
+
+const routeChange = (path) => {
+  if (this.currentPath === path) {
+    return
   }
+  router.push(path)
+  currentPath.value = path
 }
 </script>
 <style lang="scss">

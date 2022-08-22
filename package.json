@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "play:vue2": "cd vue2-lib/playground && npm run routes && npm run dev",
-    "play:vue3": "cd vue3-lib/playground && npm run dev"
+    "play:vue3": "cd vue3-lib/playground && npm run dev",
+    "build:vue3": "cd vue3-lib/playground && npm run build",
+    "build:vue2": "cd vue2-lib/playground && npm run build",
+    "build": "npm run build:vue3 && npm run build:vue2"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +19,10 @@
     "globby": "^13.1.2",
     "gray-matter": "^4.0.3",
     "prismjs": "^1.28.0",
+    "rollup-plugin-visualizer": "^5.8.0",
     "sass": "^1.54.4",
+    "single-spa": "^5.9.4",
+    "single-spa-vue": "^2.5.1",
     "vite": "^3.0.7"
   },
   "dependencies": {

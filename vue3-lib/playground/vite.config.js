@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vitePluginDoc from '@youus/vite-plugin-doc';
 import matter from 'gray-matter';
+import visualizer from 'rollup-plugin-visualizer';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -100,4 +101,22 @@ export default defineConfig({
       }
     })
   ],
+  build: {
+    assetsDir: '',
+    outDir: '../../output',
+    cssCodeSplit: false,
+    target: 'esnext',
+    manifest: true,
+    rollupOptions: {
+        plugins: [visualizer({ open: false })],
+        preserveEntrySignatures: 'exports-only',
+        external: ['single-spa', 'single-spa-vue'],
+        input: 'src/entry.js',
+        output: {
+          format: 'system',
+          entryFileNames: 'vue3-lib.[format].[hash].js',
+          compact: true,
+      },
+    },
+  },
 })
